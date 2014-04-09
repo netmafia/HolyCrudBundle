@@ -1,0 +1,4 @@
+#netmafia_holycrud_demo:
+#    resource: "NetMafia\HolyCrudBundle\Controller\DemoHolyCrudController"
+#    prefix: "/demo"
+#    type: holycrud

@@ -1,0 +1,20 @@
+parameters:
+#    netmafia_holy_crud.example.class: NetMafia\HolyCrudBundle\Example
+
+services:
+    netmafia_holycrud.helper:
+        scope: request
+        class: NetMafia\HolyCrudBundle\Util\HolyCrudHelper
+        arguments:
+            - @router
+            - @doctrine.orm.entity_manager
+            - @templating
+            - @request
+            - @controller_name_converter
+            - @form.factory
+            - %templating.engines%
+    netmafia_holycrud.router.loader:
+        class: NetMafia\HolyCrudBundle\Routing\HolyCrudLoader
+        arguments: [@controller_name_converter]
+        tags:
+            - { name: routing.loader }

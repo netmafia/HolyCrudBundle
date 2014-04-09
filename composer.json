@@ -1,0 +1,31 @@
+{
+    "name": "netmafia/HolyCrudBundle",
+    "type": "symfony-bundle",
+    "description": "HolyCrud Bundle",
+    "keywords": ["import", "fixtures"],
+    "homepage": "https://github.com/netmafia/HolyCrudBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NetMafia"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": ">=2.1,<3.0"
+    },
+    "require-dev": {
+    },
+    "autoload":{
+        "psr-0":{
+            "NetMafia\\HolyCrudBundle": ""
+        }
+    },
+    "target-dir": "NetMafia/HolyCrudBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
